@@ -18,11 +18,12 @@ function getProcessOrder(){
         },3000);     
     });
 }
+
 getProcessOrder()
         .then((order) =>{
-            console.log("Studnet data received");
+            console.log("Successfully processed the order.");
             console.log("Order ID: ",order.orderId);
-            console.log("Name: ",order.name);
+            console.log("Customer: ",order.customer);
             console.log("Item: ",order.item);
             console.log("Quantity: ",order.quantity);
             console.log("Total: ",order.total)
